@@ -46,8 +46,8 @@
 
 <p>You'll notice that in the caption the name, breed, and location of where the photo was taken are included. </p>
 
-<h3>
-<a id="methodology" class="anchor" href="#methodology" aria-hidden="true"><span class="octicon octicon-link"></span></a>Methodology</h3>
+<h1>
+<a id="methodology" class="anchor" href="#methodology" aria-hidden="true"><span class="octicon octicon-link"></span></a>Methodology</h1>
 
 <p><em>Dogs of New York</em> is a visualization of some of The Dogists’ photos. The goal of this project was to answer the following:</p>
 
@@ -57,20 +57,49 @@
    dogs through social media?
 </code></pre>
 
-<h1>
-<a id="process" class="anchor" href="#process" aria-hidden="true"><span class="octicon octicon-link"></span></a>Process</h1>
+<h2>
+<a id="inspiration" class="anchor" href="#inspiration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inspiration</h2>
+
+<p>The inspiration from this project came from the fact that I really enjoy this blog, and that I have never been to New York. Everyday is see The Dogist's posts on Instagram, and I would wonder where exactly these photos were being taken. I decided that I would really love to investigate this curiosity more, and that a visualization of the dogs' location could be quite interesting. </p>
+
+<h2>
+<a id="process" class="anchor" href="#process" aria-hidden="true"><span class="octicon octicon-link"></span></a>Process</h2>
 
 <p>First, I narrowed the 2 years worth of posts to 3 months, May, June, and July of 2015 to use for my visualization.
 I took all the information from the caption of these photos and made an excel chart with it using Name, Breed, Location, Age, and Notes(likes) as column headings.</p>
 
 <p>Next, I uploaded the database into Google Maps; thankfully it was able to geocode the locations provided in the photo captions.  </p>
 
-<p>Setbacks: In order to get the photos to appear with the point, I had to go through every dog and link the image URL to it through Google Maps.</p>
+<p>Challenges and Setbacks:
+    - The locations given in the comments of the photos are 
+     usually very generalized, like two cross roads, or a park. 
+     Thus, the points on the map are not very true to the actual
+     location to where the photo was taken.
+    -In order to get the photos to appear with the point, 
+     I had to go through every dog and link the image URL to
+     it through Google Maps.
+    - Trying to use Google Earth to timecode my data and enable 
+     my points to be plotted on a timeline. 
+     After failing with Google Earth I tried using CartDB's timeline 
+     feature, however, not all my points could be geolocated on CartoDB.</p>
+
+<h2>
+<a id="presentation" class="anchor" href="#presentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Presentation</h2>
+
+<p>I decided to present my project as a website for two reasons:</p>
+
+<p>1) I wanted to keep with the continuity of the actual <a href="http://thedogist.com/">The Dogist</a>. The theme of the blog is very simple, black and white with bold text. I wanted to my project to be seen as a good reflection of the blog that inspired it.</p>
+
+<p>2) I have never used GitHub and it is really simple to use. Although GitHub gave me its own challenges seeing as I have never really coded before, it was really fun to figure out. I enjoyed working in it, and how it displayed my project.</p>
 
 <h1>
 <a id="the-map" class="anchor" href="#the-map" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Map</h1>
 
-<p><a href="https://www.google.com/maps/d/embed?mid=zHEV5kk-5mMk.koIcFyX6QQtM">Dogs of New York May-June</a></p>
+<p><a href="https://www.google.com/maps/d/embed?mid=zHEV5kk-5mMk.koIcFyX6QQtM">Dogs of New York May-July</a></p>
+
+<p>Things to note:
+    - The months are represented with different colored points
+    - Searching Breeds, or Names, allows for a more selective search</p>
 
 <p>The New York Times posted an article about trends seen in breed popularity based on NYC zip code. <a href="http://www.nytimes.com/2003/10/24/nyregion/new-york-s-top-dog-it-depends-on-the-zip-code.html?_r=0">NYT Top Dogs of NYC</a></p>
 
@@ -78,6 +107,8 @@ I took all the information from the caption of these photos and made an excel ch
 <a id="graphs" class="anchor" href="#graphs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Graphs</h1>
 
 <p><a href="https://public.tableau.com/profile/publish/Dogs_3/Dogs_July#!/publish-confirm">Location,Breed,Name x Age,Notes</a></p>
+
+<p>The Y-axis displays Location, Breed, and Name while the X-axis displays the amount of likes according to Age. I decided to group the categories like this to analyze trends in follower interaction with these photos. This format also allows for analyzation of likes per photo based one location of the photo taken. </p>
 
 <h1>
 <a id="conclusion" class="anchor" href="#conclusion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conclusion</h1>
@@ -103,6 +134,10 @@ generalizations from the trends</li>
 given in the caption, so those photos were omitted</li>
 </ul>
 
+<p>Overall, I would not say the information on the map is an accurate representation of dog popularity in New York as I had orignally hoped. There are just way too many limitations to the data. For example, the photos are being taken by one person and could be subjected to dog breed bias. If I were to expand this project to include 3 years worth of photos, I would be curious to see if there actually is a better correlation between the New York Times article and the popularity of dog breeds in some photos. Perhaps a bigger database would reveal those kinds of trends.</p>
+
+<p>I found the Tableau chart particularly interesting because you can clearly see that photos of dogs 12 months or younger get more notes or likes on Instagram. </p>
+
 <h2>
 <a id="resources" class="anchor" href="#resources" aria-hidden="true"><span class="octicon octicon-link"></span></a>Resources</h2>
 
@@ -120,8 +155,6 @@ given in the caption, so those photos were omitted</li>
 <a id="made-with" class="anchor" href="#made-with" aria-hidden="true"><span class="octicon octicon-link"></span></a>Made With</h3>
 
 <p>Google Maps</p>
-
-<p>Google Earth</p>
 
 <p>Tableau</p>
       </section>
